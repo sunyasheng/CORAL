@@ -1,0 +1,173 @@
+{
+  "project": "CORAL",
+  "paper": "https://arxiv.org/abs/2607.17412",
+  "project_page": "https://sunyasheng.github.io/projects/CORAL.html",
+  "assets": [
+    {
+      "path": "assets/figures/teaser.png",
+      "bytes": 670553,
+      "sha256": "4d3cc0495afff70835237a909862b003e4e9c1c251fd32ed1e04e577dabc03b9",
+      "description": "Author-supplied paper figure or web preview"
+    },
+    {
+      "path": "assets/figures/architecture.png",
+      "bytes": 438624,
+      "sha256": "36a00adf0b8dc5500304ee2e90d6b46e870893793bcb577ad5cda891a9919652",
+      "description": "Author-supplied paper figure or web preview"
+    },
+    {
+      "path": "assets/figures/qualitative.jpg",
+      "bytes": 279303,
+      "sha256": "1aa039f021354612ef0142d24bb7cf78a475598a8f56f7e56702e70b94d701e1",
+      "description": "Author-supplied paper figure or web preview"
+    },
+    {
+      "path": "assets/figures/teaser.pdf",
+      "bytes": 934886,
+      "sha256": "4028927e9f2503a0faf73021f9304ad674fde41107444ed551a1021de952c3c6",
+      "description": "Author-supplied paper figure or web preview"
+    },
+    {
+      "path": "assets/figures/architecture.pdf",
+      "bytes": 627387,
+      "sha256": "d28f44a90b5bbbf8b1e9b61213681cf32ad86a2bb08dec19af960c4d0cae69c6",
+      "description": "Author-supplied paper figure or web preview"
+    },
+    {
+      "path": "assets/figures/qualitative.pdf",
+      "bytes": 6476644,
+      "sha256": "46d7fa367b9cbc4faa2b18655cd1d8559a03919584fe23b11b92adfeec7fadba",
+      "description": "Author-supplied paper figure or web preview"
+    },
+    {
+      "path": "assets/poster/coral_poster_print.pdf",
+      "bytes": 8184849,
+      "sha256": "3fbbfe717e29c75eb407ebd241417b0a34f41dbbb4e63ae0920072f3cd8c35e1",
+      "description": "Conference poster or web export"
+    },
+    {
+      "path": "assets/poster/coral_poster_preview.jpg",
+      "bytes": 576559,
+      "sha256": "11e45c6c3ecb8ff3feae94aaa3bfac5075a6d80de6484a80d9b254d4801d4c4e",
+      "description": "Conference poster or web export"
+    },
+    {
+      "path": "assets/poster/coral_poster_online.png",
+      "bytes": 2354530,
+      "sha256": "d5628e688daaded34d60f400f0171cc25bf73b0502e1cb8f21997dd6678d23ef",
+      "description": "Conference poster or web export"
+    },
+    {
+      "path": "assets/videos/md_7UPG_sys10.jpg",
+      "bytes": 51629,
+      "sha256": "412f34d220453eaaae7e92ef3d440c9f16ca5fc7709d1fde2e8d3132fb6cb3f9",
+      "source": "https://sunyasheng.github.io/projects/CORAL/videos/md_7UPG_sys10.jpg",
+      "description": "Original project-page molecular dynamics visualization or preview"
+    },
+    {
+      "path": "assets/videos/md_7UPG_sys10.mp4",
+      "bytes": 2464917,
+      "sha256": "1c4d97abf404f5c101b7e24d946354a9e49720a6be8990a41ea15c4337374c8b",
+      "source": "https://sunyasheng.github.io/projects/CORAL/videos/md_7UPG_sys10.mp4",
+      "description": "Original project-page molecular dynamics visualization or preview"
+    },
+    {
+      "path": "assets/videos/md_7WMM_sys10.jpg",
+      "bytes": 40329,
+      "sha256": "f9d1d45298cb070126f429a28e5d6a06d511517ae349c995d9040a1c7ab32f3a",
+      "source": "https://sunyasheng.github.io/projects/CORAL/videos/md_7WMM_sys10.jpg",
+      "description": "Original project-page molecular dynamics visualization or preview"
+    },
+    {
+      "path": "assets/videos/md_7WMM_sys10.mp4",
+      "bytes": 2045759,
+      "sha256": "201c4eb84350fac461c5d33408ee3aacbbd67800699db4aa23ba7a3ee8d25adf",
+      "source": "https://sunyasheng.github.io/projects/CORAL/videos/md_7WMM_sys10.mp4",
+      "description": "Original project-page molecular dynamics visualization or preview"
+    },
+    {
+      "path": "assets/videos/md_7WMM_sys11.jpg",
+      "bytes": 40232,
+      "sha256": "dafcaef6f869c9d044836a2f9f2b2626d0168daee8f1f98fc68aad11c731077a",
+      "source": "https://sunyasheng.github.io/projects/CORAL/videos/md_7WMM_sys11.jpg",
+      "description": "Original project-page molecular dynamics visualization or preview"
+    },
+    {
+      "path": "assets/videos/md_7WMM_sys11.mp4",
+      "bytes": 2091959,
+      "sha256": "d46d977b4bad97af961d46874791506fda7e3e5bbac8dbacb5f842a594525247",
+      "source": "https://sunyasheng.github.io/projects/CORAL/videos/md_7WMM_sys11.mp4",
+      "description": "Original project-page molecular dynamics visualization or preview"
+    },
+    {
+      "path": "assets/videos/md_7WMM_sys17.jpg",
+      "bytes": 42187,
+      "sha256": "a4a19ae07b1eb63c7a51c2401c0077279dae3d52d3e2f93db9fb34cb6210c75a",
+      "source": "https://sunyasheng.github.io/projects/CORAL/videos/md_7WMM_sys17.jpg",
+      "description": "Original project-page molecular dynamics visualization or preview"
+    },
+    {
+      "path": "assets/videos/md_7WMM_sys17.mp4",
+      "bytes": 2222389,
+      "sha256": "24a4895f468a9516a05ab9061934a91be8182069e42c80c773686f5733888846",
+      "source": "https://sunyasheng.github.io/projects/CORAL/videos/md_7WMM_sys17.mp4",
+      "description": "Original project-page molecular dynamics visualization or preview"
+    },
+    {
+      "path": "assets/videos/md_7WMM_sys29.jpg",
+      "bytes": 35528,
+      "sha256": "0a92cd760ab47e53f0a6090487fe35f32c5c6a4ba05aa392d4cc00a0f16ce004",
+      "source": "https://sunyasheng.github.io/projects/CORAL/videos/md_7WMM_sys29.jpg",
+      "description": "Original project-page molecular dynamics visualization or preview"
+    },
+    {
+      "path": "assets/videos/md_7WMM_sys29.mp4",
+      "bytes": 1907995,
+      "sha256": "59126ca6d19f3f7e454cc51ca572d1225f3de4ffcc6d25ec6d2a1ecf08433285",
+      "source": "https://sunyasheng.github.io/projects/CORAL/videos/md_7WMM_sys29.mp4",
+      "description": "Original project-page molecular dynamics visualization or preview"
+    },
+    {
+      "path": "assets/videos/md_8A9L_rJCU.jpg",
+      "bytes": 45245,
+      "sha256": "cf249af0c334a71d1d8025e8a92f9de4ab5220f91647c76e89d6459fc9e9c50a",
+      "source": "https://sunyasheng.github.io/projects/CORAL/videos/md_8A9L_rJCU.jpg",
+      "description": "Original project-page molecular dynamics visualization or preview"
+    },
+    {
+      "path": "assets/videos/md_8A9L_rJCU.mp4",
+      "bytes": 1554617,
+      "sha256": "fb02dc4be3d4980097122030ec6b118e46d2f5f3a8b6e0aa9b31944872136e42",
+      "source": "https://sunyasheng.github.io/projects/CORAL/videos/md_8A9L_rJCU.mp4",
+      "description": "Original project-page molecular dynamics visualization or preview"
+    },
+    {
+      "path": "assets/videos/md_9UFF_c13.jpg",
+      "bytes": 34886,
+      "sha256": "c80c97cc8170a9ed94f2980d0d55b702b0788d72c3491d550fde712abb3186ca",
+      "source": "https://sunyasheng.github.io/projects/CORAL/videos/md_9UFF_c13.jpg",
+      "description": "Original project-page molecular dynamics visualization or preview"
+    },
+    {
+      "path": "assets/videos/md_9UFF_c13.mp4",
+      "bytes": 2381556,
+      "sha256": "7de728777dc22b702240d4281e20805ce94cf5a9a344b4aa87e7042bb4cb0c9c",
+      "source": "https://sunyasheng.github.io/projects/CORAL/videos/md_9UFF_c13.mp4",
+      "description": "Original project-page molecular dynamics visualization or preview"
+    },
+    {
+      "path": "assets/videos/md_9UFF_c29.jpg",
+      "bytes": 32563,
+      "sha256": "dd2d07a480fa5cf4838e4f1cdb183d7d829aca5267cf15b5e2bc0c9c48bb8db7",
+      "source": "https://sunyasheng.github.io/projects/CORAL/videos/md_9UFF_c29.jpg",
+      "description": "Original project-page molecular dynamics visualization or preview"
+    },
+    {
+      "path": "assets/videos/md_9UFF_c29.mp4",
+      "bytes": 2209620,
+      "sha256": "a90192eaa25d7404839674485ede7d8565dfd563f6aff0b8ab287432316210f4",
+      "source": "https://sunyasheng.github.io/projects/CORAL/videos/md_9UFF_c29.mp4",
+      "description": "Original project-page molecular dynamics visualization or preview"
+    }
+  ]
+}
