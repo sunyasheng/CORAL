@@ -41,20 +41,20 @@
     },
     {
       "path": "assets/poster/coral_poster_print.pdf",
-      "bytes": 8134355,
-      "sha256": "2b4329105dae21ab6e799f3d4d726f5afa738c9f51aae43b6bd7bdb34ba178dd",
+      "bytes": 9032706,
+      "sha256": "8e97bc9bfaa22f0c428a3ad16db9e223bd582c35af8b521244003e14f0187ac0",
       "description": "Conference poster or web export"
     },
     {
       "path": "assets/poster/coral_poster_preview.jpg",
-      "bytes": 562574,
-      "sha256": "ef668c61c87f57950f41ce19b8f965af87304d7b6769f5e16fb84bddf285261a",
+      "bytes": 633428,
+      "sha256": "e5c9c218a243eb4ddb1eddde7b857b4489aaf9ecfa400a5971d8fcf236f5d633",
       "description": "Conference poster or web export"
     },
     {
       "path": "assets/poster/coral_poster_online.png",
-      "bytes": 2273808,
-      "sha256": "65dc55d25526347a0fe300d74223515c2d9e6fcbc8564ec2afb7f8c8ee4de7e1",
+      "bytes": 2305300,
+      "sha256": "f2fbd3cfba9da424b5e557b23903b23fe02c3ac58856a0dd542795412d4edf7a",
       "description": "Conference poster or web export"
     },
     {
