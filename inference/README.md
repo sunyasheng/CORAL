@@ -5,7 +5,8 @@ and blind protein–ligand prediction with precomputed MSA.
 This release uses the **CORAL RL checkpoint with PF/layer position encoding**,
 stored as `checkpoints/coral_rl_train.pt`.
 
-[View sample predictions](examples/README.md): four fibril stacks and two protein–ligand complexes, with PyMOL comparisons, input files and downloadable outputs.
+New users can start with the [root README quick start](../README.md#-quick-start). This guide adds the input format and troubleshooting.
+[View the example gallery](examples/README.md): four fibril stacks and two protein–ligand complexes, with PyMOL comparisons, input files and downloadable outputs.
 
 ## Install and download
 
@@ -37,9 +38,9 @@ Files can also be downloaded from the [release](https://github.com/sunyasheng/CO
 
 ```bash
 python infer.py --mode fibril \
-  --input examples/fibril/7WMM_g1/input.json \
-  --receptor examples/fibril/7WMM_g1/receptor.pdb \
-  --out outputs/fibril
+  --input examples/fibril/8UQ7_g1/input.json \
+  --receptor examples/fibril/8UQ7_g1/receptor.pdb \
+  --out outputs/8UQ7_g1
 ```
 
 This example predicts three ligand copies. Inputs contain sequence, ligand
@@ -56,7 +57,7 @@ protein to the input receptor before overlaying them.
 ```bash
 python infer.py --mode posebusters \
   --input examples/posebusters/5SD5_HWI/input.json \
-  --out outputs/posebusters
+  --out outputs/5SD5_HWI
 ```
 
 This mode predicts both protein and ligand. Supply sequence, one ligand,
