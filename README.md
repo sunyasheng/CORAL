@@ -20,10 +20,10 @@ CORAL trains a generative docking model for the repeating grooves of amyloid fib
 ## Inference
 
 The [inference package](inference/) supports **fibril–ligand docking**
-and **blind protein–ligand prediction with MSA**, using the mix3 step-19999
-checkpoint with PF/layer position encoding.
+and **blind protein–ligand prediction with MSA**, using the CORAL RL checkpoint
+(`coral_rl_train.pt`) with PF/layer position encoding.
 
-[Install and run](inference/README.md) · [Sample inputs, outputs and commands](inference/examples/README.md) · [Download checkpoint and CCD](https://github.com/sunyasheng/CORAL/releases/tag/inference-v0.1.0)
+[Install and run](inference/README.md) · [Sample inputs, outputs and commands](inference/examples/README.md) · [Download checkpoint and CCD](https://github.com/sunyasheng/CORAL/releases/tag/inference-v0.1.1)
 
 ### Sample predictions
 

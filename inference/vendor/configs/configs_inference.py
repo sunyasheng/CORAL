@@ -33,10 +33,8 @@ inference_configs = {
     "dump_structure_format": "cif",  # "cif" or "pdb"; PDB needed for e.g. PoseBench alignment
     "input_json_path": RequiredValue(str),
     "load_checkpoint_dir": os.path.join(code_directory, "./release_data/checkpoint/"),
-    # Load this exact file instead of <load_checkpoint_dir>/<model_name>.pt. The constructed
-    # path forces any custom checkpoint to be symlinked under the official release name, and a
-    # symlink hides its target: a directory named ...lm5_3998 pointed at checkpoints/999.pt and
-    # an entire evaluation was attributed to the wrong training step. Empty keeps the old path.
+    # An explicit file overrides <load_checkpoint_dir>/<model_name>.pt.
+    # Leave empty to use the model-name default.
     "load_checkpoint_path": "",
     "num_workers": 16,
     "use_msa": True,

@@ -123,11 +123,7 @@ class InferenceRunner(object):
         self.model = Protenix(self.configs).to(self.device)
 
     def load_checkpoint(self) -> None:
-        # A direct path wins over the dir/model_name construction. That construction is why loading a
-        # custom checkpoint requires a symlink named after the official release, and a symlink hides
-        # what it points at: a directory named ...mar19lm5_3998 held a link to checkpoints/999.pt, and
-        # a whole evaluation was reported against the wrong training step because the path looked
-        # authoritative. With a direct path there is nothing to disagree with.
+        # An explicit checkpoint path takes precedence over the model-name default.
         direct = getattr(self.configs, "load_checkpoint_path", "") or ""
         if direct:
             checkpoint_path = direct
@@ -156,8 +152,7 @@ class InferenceRunner(object):
             map_location=self.device,
             weights_only=False,
         )
-        # Which training step these weights are, taken from the file rather than from its path. A
-        # directory named ...lm5_3998 holding a link to checkpoints/999.pt is why this is logged.
+        # Read training metadata from the checkpoint itself.
         if isinstance(checkpoint, dict) and "step" in checkpoint:
             self.print(f"  checkpoint training step: {checkpoint['step']}")
 

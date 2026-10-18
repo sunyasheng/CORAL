@@ -2,7 +2,8 @@
 
 One checkpoint, two modes: ligand docking around a supplied amyloid fibril,
 and blind protein–ligand prediction with precomputed MSA.
-This release uses the **mix3 step-19999 checkpoint with PF/layer position encoding**.
+This release uses the **CORAL RL checkpoint with PF/layer position encoding**,
+stored as `checkpoints/coral_rl_train.pt`.
 
 [View sample predictions](examples/README.md): four fibril stacks and two protein–ligand complexes, with PyMOL comparisons, input files and downloadable outputs.
 
@@ -27,9 +28,9 @@ python -m pip install -r requirements-lock.txt
 python download_assets.py
 ```
 
-The downloader places the checkpoint in `checkpoints/` and CCD files in `data/`,
+The downloader places the checkpoint at `checkpoints/coral_rl_train.pt` and CCD files in `data/`,
 verifies SHA-256, and skips existing matching files. Total download: **2.10 GB**.
-Files can also be downloaded from the [release](https://github.com/sunyasheng/CORAL/releases/tag/inference-v0.1.0);
+Files can also be downloaded from the [release](https://github.com/sunyasheng/CORAL/releases/tag/inference-v0.1.1);
 `assets.json` records their exact versions, destinations and hashes.
 
 ## Fibril–ligand docking

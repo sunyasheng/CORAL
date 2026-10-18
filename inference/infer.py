@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run CORAL checkpoint 19999: fixed fibril docking or blind PoseBusters with MSA."""
+"""Run the CORAL RL checkpoint: fixed fibril docking or blind PoseBusters with MSA."""
 import argparse
 import hashlib
 import json
@@ -32,7 +32,8 @@ def main():
     p.add_argument("--input", type=Path, required=True, help="One-case input JSON")
     p.add_argument("--mode", choices=["fibril", "posebusters"], default="fibril")
     p.add_argument("--receptor", type=Path, help="Fibril mode: receptor PDB with adjacent .refmap.json")
-    p.add_argument("--checkpoint", type=Path, default=ROOT / "checkpoints/mix3_19999_inference.pt")
+    p.add_argument("--checkpoint", type=Path, default=ROOT / "checkpoints/coral_rl_train.pt",
+                   help="Checkpoint file (default: checkpoints/coral_rl_train.pt)")
     p.add_argument("--data", type=Path, default=ROOT / "data")
     p.add_argument("--out", type=Path, required=True, help="New output directory; existing cases are refused")
     p.add_argument("--check-only", action="store_true", help="Validate inputs/environment without loading the model")
@@ -72,7 +73,7 @@ def main():
         print(f"Input valid: {name}; mode={a.mode}; MSA files={len(msa_files)}")
         return
     manifest = json.loads((ROOT / "assets.json").read_text())
-    asset_paths = {"checkpoints/mix3_19999_inference.pt": a.checkpoint,
+    asset_paths = {"checkpoints/coral_rl_train.pt": a.checkpoint,
                    "data/components.cif": a.data / "components.cif",
                    "data/components.cif.rdkit_mol.pkl": a.data / "components.cif.rdkit_mol.pkl"}
     asset_hashes = {key: digest(path) for key,path in asset_paths.items()}
@@ -130,7 +131,7 @@ def main():
         def load_checkpoint(self):
             ckpt = torch.load(a.checkpoint, map_location="cpu", weights_only=True, mmap=True)
             if int(ckpt.get("step", -1)) != 19999:
-                raise ValueError(f"Expected step 19999, got {ckpt.get('step')}")
+                raise ValueError("Checkpoint metadata does not match the CORAL RL release")
             weights = {k.removeprefix("module."): v for k, v in ckpt["model"].items()}
             for k in ("relative_position_encoding.linear_no_bias.weight",
                       "diffusion_module.diffusion_conditioning.relpe.linear_no_bias.weight"):
@@ -138,7 +139,7 @@ def main():
                     raise ValueError(f"Wrong position encoding: {k}: {weights[k].shape}")
             self.model.load_state_dict(weights, strict=True)
             self.model.eval()
-            logging.info("Loaded exact step 19999, strict=True, position weights both (128,151)")
+            logging.info("Loaded CORAL RL checkpoint, strict=True, position weights both (128,151)")
 
     cfg = parse_configs({**base, "data": data_configs, **inference_configs},
                         fill_required_with_null=True)
@@ -173,7 +174,7 @@ def main():
     a.out.mkdir(parents=True, exist_ok=True)
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s",
                         handlers=[logging.StreamHandler(), logging.FileHandler(a.out / "run.log")], force=True)
-    receipt = {"status": "running", "checkpoint_sha256": asset_hashes["checkpoints/mix3_19999_inference.pt"], "assets_sha256": asset_hashes,
+    receipt = {"status": "running", "checkpoint_sha256": asset_hashes["checkpoints/coral_rl_train.pt"], "assets_sha256": asset_hashes,
                "gpu": torch.cuda.get_device_name(), "torch": torch.__version__,
                "settings": {k: str(v) if isinstance(v, Path) else v for k, v in vars(a).items()},
                "cases": [], "started_unix": time.time()}

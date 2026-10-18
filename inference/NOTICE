@@ -11,7 +11,7 @@ fixed-receptor/constraint inference, portable input and asset handling,
 input-chemistry ligand export, and confidence-rank-consistent structure export.
 The vendored Python files carry a distribution modification notice.
 
-The supplied model is the CORAL mix3 step-19999 checkpoint from the
+The supplied model is the CORAL RL checkpoint (coral_rl_train.pt) from the
 Protenix v0.5 model family. It is not the Protenix-v2 model.
 Code and CORAL checkpoint are distributed under Apache-2.0.
 Chemical Component Dictionary data is from wwPDB, with an RDKit cache derived
