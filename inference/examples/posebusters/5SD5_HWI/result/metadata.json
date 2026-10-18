@@ -1,0 +1,130 @@
+{
+  "case": "5SD5_HWI",
+  "mode": "posebusters",
+  "code_commit": "0a517fba357d9b7973e8df902871c70ffd40445b",
+  "generated_at_utc": "2026-10-18T10:34:13.502769+00:00",
+  "command": "python infer.py --mode posebusters --input examples/posebusters/5SD5_HWI/input.json --out outputs/5SD5_HWI",
+  "settings": {
+    "seed": 101,
+    "samples": 5,
+    "steps": 200,
+    "cycles": 10,
+    "workers": 16,
+    "kernels": "optimized"
+  },
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "torch": "2.7.1+cu126",
+  "checkpoint_sha256": "d3c4fa80760ae37f10f864730c4e8a941d03e106a9b3829f2009fe3170c118f2",
+  "input_sha256": {
+    "input.json": "214ba8cf7e0099bef05d7aaf00ff179946b9e6e2383843e62c56bd1012c4d647",
+    "msa/1/non_pairing.a3m": "3645ecabe8d50104e2adfdcd791afc776e2e5ff8d864b29da5b0e2ba6d17913a",
+    "msa/1/pairing.a3m": "a3612a9fc5976210eb69e9b1af5a97a8f47fc2e64e7f17b12a025b730cce66c5",
+    "reference/ligand.sdf": "5cb7355e18c0af38af55ab49824e34c8f97540ab0a6866d97dbc45c1dfc59fb3",
+    "reference/receptor.pdb": "30a1ca38d5f047209fc65752e9a7e4a643d929be7f8d5c06eae303371e266ac6",
+    "reference/source.json": "fa13e25f8d909de5fa278faddf9698791aee25e8405914d0480acbef2862a6cd"
+  },
+  "selection": "highest confidence (sample_0) of five candidates",
+  "reference": {
+    "pdb_id": "5SD5",
+    "source": "PoseBusters benchmark reference",
+    "use": "Visualization/scoring only; never passed to blind inference"
+  },
+  "rendering": {
+    "protein": {
+      "pymol_version": [
+        "3.1.0",
+        3.0,
+        3000000,
+        1762383479,
+        "",
+        0
+      ],
+      "camera": [
+        0.7541691660881042,
+        -0.28053244948387146,
+        -0.5937426686286926,
+        0.611281156539917,
+        0.6302502155303955,
+        0.4786648452281952,
+        0.23992544412612915,
+        -0.72393798828125,
+        0.6467995047569275,
+        0.0,
+        0.0,
+        -65.45206451416016,
+        6.051598072052002,
+        2.0640697479248047,
+        14.233348846435547,
+        51.6029052734375,
+        79.30122375488281,
+        20.0
+      ],
+      "protein_alignment": [
+        0.30261775851249695,
+        313,
+        5,
+        1.0912789106369019,
+        400,
+        250.5,
+        64
+      ],
+      "counts": {
+        "prediction_atoms": 29,
+        "reference_atoms": 29
+      }
+    },
+    "ligand": {
+      "pymol_version": [
+        "3.1.0",
+        3.0,
+        3000000,
+        1762383479,
+        "",
+        0
+      ],
+      "camera": [
+        0.2772223949432373,
+        0.13411177694797516,
+        -0.9513999223709106,
+        0.7752830982208252,
+        0.553669273853302,
+        0.3039514422416687,
+        0.5675243735313416,
+        -0.8218663334846497,
+        0.04951495677232742,
+        0.0,
+        0.0,
+        -65.45206451416016,
+        6.051598072052002,
+        2.0640697479248047,
+        14.233348846435547,
+        51.6029052734375,
+        79.30122375488281,
+        20.0
+      ],
+      "protein_alignment": [
+        0.30261775851249695,
+        313,
+        5,
+        1.0912789106369019,
+        400,
+        250.5,
+        64
+      ],
+      "counts": {
+        "prediction_atoms": 29,
+        "reference_atoms": 29
+      }
+    }
+  },
+  "coordinate_processing": "Raw output files unchanged; display uses rigid protein alignment only, no ligand fitting or relaxation.",
+  "files_sha256": {
+    "5SD5_HWI_ligand_sample_0.sdf": "bbf122a6b245d81a39de19a766527cb2c07c65877b887bb1f4f823929d6e4f3d",
+    "5SD5_HWI_sample_0.pdb": "f3012756f90dd5fe74f5c6223babec25cb20031947ce73b7c2feb01e1644daec",
+    "5SD5_HWI_summary_confidence_sample_0.json": "f28358d0297bab55906ac665d2b193a217e25622946d4774dd5b389ecd04215c",
+    "ligand_view0.jpg": "77a343169574eb9086382b646c8eeaa857ce6fcd810e345c655b7678bc923534",
+    "ligand_view1.jpg": "f368323c8c9e92bad2b5f170bca91ddb0f4bac457ae7961d22a5d3ad6da60be6",
+    "protein_view0.jpg": "4860ac20b4123d95dca2e0491eb772b29d2478f1e2d0b018f73b2f6badab870d",
+    "protein_view1.jpg": "bb8780f091a37081233a37bead84c6576212b8a61cb04e6a24ebc2d7cf47b917"
+  }
+}

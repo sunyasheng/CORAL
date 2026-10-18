@@ -1,0 +1,117 @@
+{
+  "case": "7YNF_g2",
+  "mode": "fibril",
+  "code_commit": "0a517fba357d9b7973e8df902871c70ffd40445b",
+  "generated_at_utc": "2026-10-18T10:37:28.653336+00:00",
+  "command": "python infer.py --mode fibril --input examples/fibril/7YNF_g2/input.json --receptor examples/fibril/7YNF_g2/receptor.pdb --out outputs/7YNF_g2",
+  "settings": {
+    "seed": 101,
+    "samples": 5,
+    "steps": 200,
+    "cycles": 10,
+    "workers": 16,
+    "kernels": "optimized"
+  },
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "torch": "2.7.1+cu126",
+  "checkpoint_sha256": "d3c4fa80760ae37f10f864730c4e8a941d03e106a9b3829f2009fe3170c118f2",
+  "input_sha256": {
+    "input.json": "ebe30f0aa071735c5f1a891c9b7b294630af3d5ed415835427d79a7d4b8b2881",
+    "receptor.pdb": "ea95cd1f17a897e84a1acf36be48e71fa4a4f5d653664fce5abe51de4190d351",
+    "receptor.refmap.json": "3ab2f8d9ce09ff2a4ac8d4b938db61db262444e0f79761064d7c9875475cc164",
+    "reference/ligand.sdf": "d739cc42db8ba97bf5012b3af4aca1f4bfbab54c62bd5f407110c22691c48b3f",
+    "reference/source.json": "ddb4bec03d91d6aee0b5b4861f5801053830332a01da44eef512e6f0945a4f1e"
+  },
+  "selection": "highest confidence (sample_0) of five candidates",
+  "reference": {
+    "pdb_id": "7YNF",
+    "generated_copies": [
+      true,
+      false,
+      true
+    ],
+    "scored_index": 1,
+    "use": "Visualization reference only; never passed to inference"
+  },
+  "rendering": {
+    "protein": {
+      "pymol_version": [
+        "3.1.0",
+        3.0,
+        3000000,
+        1762383479,
+        "",
+        0
+      ],
+      "camera": [
+        0.2389920949935913,
+        0.13229046761989594,
+        -0.9619678854942322,
+        -0.09936220943927765,
+        0.9888075590133667,
+        0.11129584908485413,
+        0.9659245014190674,
+        0.06898442655801773,
+        0.24946187436580658,
+        0.0,
+        0.0,
+        -92.74565887451172,
+        131.18260192871094,
+        168.10552978515625,
+        154.73519897460938,
+        73.12138366699219,
+        112.36993408203125,
+        20.0
+      ],
+      "protein_alignment": null,
+      "counts": {
+        "prediction_atoms": 135,
+        "reference_atoms": 135
+      }
+    },
+    "ligand": {
+      "pymol_version": [
+        "3.1.0",
+        3.0,
+        3000000,
+        1762383479,
+        "",
+        0
+      ],
+      "camera": [
+        -0.35599127411842346,
+        0.5108508467674255,
+        -0.7824971675872803,
+        -0.017556078732013702,
+        0.8335487842559814,
+        0.5521667003631592,
+        0.9343245029449463,
+        0.2103041261434555,
+        -0.28776755928993225,
+        0.0,
+        0.0,
+        -92.74565887451172,
+        131.18260192871094,
+        168.10552978515625,
+        154.73519897460938,
+        73.12138366699219,
+        112.36993408203125,
+        20.0
+      ],
+      "protein_alignment": null,
+      "counts": {
+        "prediction_atoms": 135,
+        "reference_atoms": 135
+      }
+    }
+  },
+  "coordinate_processing": "Raw output files unchanged; display uses rigid protein alignment only, no ligand fitting or relaxation.",
+  "files_sha256": {
+    "7YNF_g2_sample_0.cif": "4696b64adfa844298d30961ccf5c103975783bce59c0db06980af2af0b172d7b",
+    "7YNF_g2_summary_confidence_sample_0.json": "9cd1a044b4da167b7d4191d895d8770313a34082ead3ea1d62f6e3434b3989e7",
+    "ligand_view0.jpg": "26e3fd59c5a35bf73737d869a22b018e326d80cdb01448873a96b8ede54d5123",
+    "ligand_view1.jpg": "a3d9b4c25a29880899f50b8d71577be4b5642faf0e0553c62c9b65eb69d63152",
+    "protein_view0.jpg": "b2ae96c90a657ed267b4c22fb8e14cb089829e29b302ea4337f526756d6cc45e",
+    "protein_view1.jpg": "a4b0cbf929bab28e836b4cb67db5e70ebe45060e49c4612116dd957e8d03473b"
+  }
+}

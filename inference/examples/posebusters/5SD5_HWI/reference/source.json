@@ -1,0 +1,5 @@
+{
+  "pdb_id": "5SD5",
+  "source": "PoseBusters benchmark reference",
+  "use": "Visualization/scoring only; never passed to blind inference"
+}

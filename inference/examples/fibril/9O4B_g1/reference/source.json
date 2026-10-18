@@ -1,0 +1,10 @@
+{
+  "pdb_id": "9O4B",
+  "generated_copies": [
+    false,
+    false,
+    false
+  ],
+  "scored_index": 1,
+  "use": "Visualization reference only; never passed to inference"
+}

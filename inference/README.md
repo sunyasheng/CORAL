@@ -4,11 +4,18 @@ One checkpoint, two modes: ligand docking around a supplied amyloid fibril,
 and blind protein–ligand prediction with precomputed MSA.
 This release uses the **mix3 step-19999 checkpoint with PF/layer position encoding**.
 
+[View sample predictions](examples/README.md): four fibril stacks and two protein–ligand complexes, with PyMOL comparisons, input files and downloadable outputs.
+
 ## Install and download
 
 Linux, Python 3.11, NVIDIA Ampere or newer GPU, CUDA 12.x toolkit (`nvcc`)
 and a C++ compiler are required. Tested on H100/H200; required memory depends
 on complex size. First use compiles the LayerNorm kernel.
+
+Let the first run finish compilation before starting parallel runs from the
+same checkout. If a run is terminated during compilation, stop all runs using
+that checkout before removing the stale `vendor/protenix/model/layer_norm/lock`
+file, then restart one run to complete the build.
 
 ```bash
 git clone https://github.com/sunyasheng/CORAL.git
@@ -40,6 +47,8 @@ adjacent `receptor.refmap.json` mapping input chains/residues to the PDB.
 Mapped resolved protein atoms stay fixed. This example includes receptor
 contacts and binding-pocket hints. Such constraints are optional for your own
 inputs; this mode does not use MSA.
+Output complexes use a receptor-centered coordinate frame. Align the output
+protein to the input receptor before overlaying them.
 
 ## Blind protein–ligand prediction (PoseBusters input)
 
@@ -75,7 +84,8 @@ Use `--seed`, `--samples`, `--steps`, `--cycles`, `--workers`, and
 Structures are under `<out>/<name>/seed_101/predictions/`: complex CIF for
 fibrils; complex PDB plus ligand SDF for blind prediction. `sample_0` is the
 highest-confidence candidate, matched to its confidence JSON. `run.json`
-records settings and output checks. A successful run confirms readable,
+records settings and output checks. Summary `plddt` uses a 0–100 scale;
+`chain_plddt` and `chain_pair_plddt` use 0–1. A successful run confirms readable,
 finite outputs and correct atom correspondence, not binding accuracy or
 physical validity. Coordinates can vary across GPU/kernel/seed.
 

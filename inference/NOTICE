@@ -1,4 +1,4 @@
-CORAL minimal inference, 2026.
+CORAL inference, 2026.
 
 The inference runtime is adapted from Protenix (ByteDance and contributors):
 https://github.com/bytedance/Protenix
@@ -17,4 +17,8 @@ Code and CORAL checkpoint are distributed under Apache-2.0.
 Chemical Component Dictionary data is from wwPDB, with an RDKit cache derived
 from it. See https://www.wwpdb.org/data/ccd and
 https://www.wwpdb.org/about/usage-policies for source attribution and terms.
-Example receptor data is derived from PDB 7WMM; the blind example is 5SD5/HWI.
+Example receptor/reference structures are derived from PDB entries 7WMM,
+8UQ7, 9O4B and 7YNF (fibrils), and 5SD5/HWI and 5SIS/JSM (PoseBusters).
+Per-example reference/source.json records symmetry-generated neighboring
+ligand copies where applicable. References are used for visualization;
+blind inference does not consume the reference receptor or ligand coordinates.

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "5SIS_JSM",
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "LMQFTLPVRLCKEIELFHFDIGPFENMWPGIFVYMVHRSCGTSCFELEKLXRFIMSVKKNYRRVPYHNWKHAVTVAHCMYAILQNNHTLFTDLERKGLLIACLCHDLDHRGFSNSYLQKFDHPLAALYSTSTMEQHHFSQTVSILQLEGHNIFSTLSSSEYEQVLEIIRKAIIATDLALYFGNRKQLEEMYQTGSLNLNNQSHRDRVIGLMMTACDLCSVTKLWPVTKLTANDIYAEFWAEGDEMKKLGIQPIPMMDRDKKDEVPQGQLGFYNAVAIPCYTTLTQILPPTEPLLKACRDNLSQWEKVIRGEETATW",
+          "count": 1,
+          "msa": {
+            "precomputed_msa_dir": "msa/1",
+            "pairing_db": "uniref100"
+          }
+        }
+      },
+      {
+        "ligand": {
+          "ligand": "CCD_JSM",
+          "count": 1
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,130 @@
+{
+  "case": "5SIS_JSM",
+  "mode": "posebusters",
+  "code_commit": "0a517fba357d9b7973e8df902871c70ffd40445b",
+  "generated_at_utc": "2026-10-18T10:37:21.443719+00:00",
+  "command": "python infer.py --mode posebusters --input examples/posebusters/5SIS_JSM/input.json --out outputs/5SIS_JSM",
+  "settings": {
+    "seed": 101,
+    "samples": 5,
+    "steps": 200,
+    "cycles": 10,
+    "workers": 16,
+    "kernels": "optimized"
+  },
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "torch": "2.7.1+cu126",
+  "checkpoint_sha256": "d3c4fa80760ae37f10f864730c4e8a941d03e106a9b3829f2009fe3170c118f2",
+  "input_sha256": {
+    "input.json": "d0d63b182f3882fd6611988b1d74b8cfaf1a983871538b43559a6544b9008d58",
+    "msa/1/non_pairing.a3m": "8ce5441ed4b61eb7526aa1fa8fc5f7212d5c68a74655ce37239a082942639298",
+    "msa/1/pairing.a3m": "ac6c42dc7687b1c86c15e15a838f3df79ce134a22a21bc98aa653be78231916c",
+    "reference/ligand.sdf": "507806a7b4cc0d84929fb9570a3228d3abdee59d1443c69cc9893d8c5fe7e0ad",
+    "reference/receptor.pdb": "cfe0f5722634fa881f9b1d313a3712dea78d20cdbe2367f32d8191f6382ffd9a",
+    "reference/source.json": "f353e3e37e906bc0ddc081b4e2778dc86a66b5dc69cb7333bc5a75f304a20b52"
+  },
+  "selection": "highest confidence (sample_0) of five candidates",
+  "reference": {
+    "pdb_id": "5SIS",
+    "source": "PoseBusters benchmark reference",
+    "use": "Visualization/scoring only; never passed to blind inference"
+  },
+  "rendering": {
+    "protein": {
+      "pymol_version": [
+        "3.1.0",
+        3.0,
+        3000000,
+        1762383479,
+        "",
+        0
+      ],
+      "camera": [
+        0.6810094118118286,
+        0.5921738147735596,
+        -0.43076252937316895,
+        -0.19503316283226013,
+        0.7136819362640381,
+        0.6727705597877502,
+        0.7058245539665222,
+        -0.3741500973701477,
+        0.6015176177024841,
+        0.0,
+        0.0,
+        -78.67420959472656,
+        32.199222564697266,
+        108.36829376220703,
+        58.376800537109375,
+        62.027347564697266,
+        95.32107543945312,
+        20.0
+      ],
+      "protein_alignment": [
+        0.30699238181114197,
+        305,
+        5,
+        1.2502137422561646,
+        365,
+        271.5,
+        62
+      ],
+      "counts": {
+        "prediction_atoms": 32,
+        "reference_atoms": 32
+      }
+    },
+    "ligand": {
+      "pymol_version": [
+        "3.1.0",
+        3.0,
+        3000000,
+        1762383479,
+        "",
+        0
+      ],
+      "camera": [
+        0.3107750117778778,
+        0.8508961200714111,
+        -0.423550009727478,
+        0.22612352669239044,
+        0.36663317680358887,
+        0.9024679064750671,
+        0.9231939911842346,
+        -0.3762390911579132,
+        -0.0784672349691391,
+        0.0,
+        0.0,
+        -78.67420959472656,
+        32.199222564697266,
+        108.36829376220703,
+        58.376800537109375,
+        62.027347564697266,
+        95.32107543945312,
+        20.0
+      ],
+      "protein_alignment": [
+        0.30699238181114197,
+        305,
+        5,
+        1.2502137422561646,
+        365,
+        271.5,
+        62
+      ],
+      "counts": {
+        "prediction_atoms": 32,
+        "reference_atoms": 32
+      }
+    }
+  },
+  "coordinate_processing": "Raw output files unchanged; display uses rigid protein alignment only, no ligand fitting or relaxation.",
+  "files_sha256": {
+    "5SIS_JSM_ligand_sample_0.sdf": "ab87d85a3e9cd9e6ea8aeb44483ed86d6c1d3781eec826a27f7f08a83abe342b",
+    "5SIS_JSM_sample_0.pdb": "8283c2050d42fb4028f3a5bd7e1143c0d2af87943dc64181e7e0eca5ca38e06f",
+    "5SIS_JSM_summary_confidence_sample_0.json": "01de547b341406f46a945ac2e8393b384926e8934ec5306f2cd87f0811838539",
+    "ligand_view0.jpg": "d0c2c83eaa640ada4e2b5fbced8a67499393bea5820a202641dd0c56e785777e",
+    "ligand_view1.jpg": "a036c40fa3ed9f5be13d71da419aaf87c87360b37472931af532c8139b50c6bd",
+    "protein_view0.jpg": "3719b659a1a004e5fb9b1170c1b6d84514e8ba15da37fe90d8937d98a69db7b4",
+    "protein_view1.jpg": "2fae7d173b731ac9f1f6b1d0509ac8d52e9cf978e04ceea3f2894f84df7de157"
+  }
+}

@@ -21,11 +21,45 @@ CORAL trains a generative docking model for the repeating grooves of amyloid fib
 
 The [inference package](inference/) supports **fibril–ligand docking**
 and **blind protein–ligand prediction with MSA**, using the mix3 step-19999
-checkpoint with PF/layer position encoding. Each mode includes one runnable input.
+checkpoint with PF/layer position encoding.
 
-See [installation and the two commands](inference/README.md).
-[Download checkpoint and CCD files](https://github.com/sunyasheng/CORAL/releases/tag/inference-v0.1.0)
-with `python download_assets.py` from the inference directory.
+[Install and run](inference/README.md) · [Sample inputs, outputs and commands](inference/examples/README.md) · [Download checkpoint and CCD](https://github.com/sunyasheng/CORAL/releases/tag/inference-v0.1.0)
+
+### Sample predictions
+
+Actual highest-confidence outputs from five candidates with seed 101. PyMOL renders show
+gray reference, teal CORAL prediction, and their overlay. The gray protein shows the local reference
+environment; blind outputs use protein-only alignment for display. Reference stacks for
+7WMM and 7YNF include symmetry-derived neighboring ligand copies.
+
+**8UQ7_g1 — three-ligand fibril stack**
+
+![8UQ7_g1 — three-ligand fibril stack: reference, CORAL prediction and overlay](inference/examples/fibril/8UQ7_g1/result/protein_view0.jpg)
+
+**7WMM_g1 — three-ligand fibril stack**
+
+![7WMM_g1 — three-ligand fibril stack: reference, CORAL prediction and overlay](inference/examples/fibril/7WMM_g1/result/protein_view0.jpg)
+
+**9O4B_g1 — three-ligand fibril stack**
+
+![9O4B_g1 — three-ligand fibril stack: reference, CORAL prediction and overlay](inference/examples/fibril/9O4B_g1/result/protein_view0.jpg)
+
+**7YNF_g2 — three-ligand fibril stack**
+
+![7YNF_g2 — three-ligand fibril stack: reference, CORAL prediction and overlay](inference/examples/fibril/7YNF_g2/result/protein_view1.jpg)
+
+The ligand-only view separates the three copies:
+
+![7YNF_g2: three ligand copies without the protein cartoon](inference/examples/fibril/7YNF_g2/result/ligand_view0.jpg)
+
+**5SD5_HWI — protein–ligand prediction with MSA**
+
+![5SD5_HWI — protein–ligand prediction with MSA: reference, CORAL prediction and overlay](inference/examples/posebusters/5SD5_HWI/result/protein_view0.jpg)
+
+**5SIS_JSM — protein–ligand prediction with MSA**
+
+![5SIS_JSM — protein–ligand prediction with MSA: reference, CORAL prediction and overlay](inference/examples/posebusters/5SIS_JSM/result/protein_view0.jpg)
+[Open all examples, ligand-only views, and downloadable structures](inference/examples/README.md).
 
 ## Assets
 
