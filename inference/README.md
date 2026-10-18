@@ -1,4 +1,4 @@
-# CORAL minimal inference
+# CORAL inference
 
 One checkpoint, two modes: ligand docking around a supplied amyloid fibril,
 and blind protein–ligand prediction with precomputed MSA.
