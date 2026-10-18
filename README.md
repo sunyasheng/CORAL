@@ -17,6 +17,16 @@ Yasheng Sun<sup>1*†</sup>, Bohan Li<sup>2*</sup>, Youqi Tao<sup>3†</sup>, J�
 
 CORAL trains a generative docking model for the repeating grooves of amyloid fibrils. Geometric warm-up establishes a ligand-stacking prior, followed by online reinforcement learning with cooperative binding rewards.
 
+## Inference
+
+The [minimal inference package](inference/) supports **fibril–ligand docking**
+and **blind protein–ligand prediction with MSA**, using the mix3 step-19999
+checkpoint with PF/layer position encoding. Each mode includes one runnable input.
+
+See [installation and the two commands](inference/README.md).
+[Download checkpoint and CCD files](https://github.com/sunyasheng/CORAL/releases/tag/inference-v0.1.0)
+with `python download_assets.py` from the inference directory.
+
 ## Assets
 
 This repository contains the visual materials accompanying the project page.
@@ -29,7 +39,7 @@ This repository contains the visual materials accompanying the project page.
 
 The simulation clips retain their original structure and system identifiers. They illustrate candidate ligand-stack trajectories. File sizes and SHA-256 checksums are listed in [`assets/manifest.json`](assets/manifest.json).
 
-This is a visual-assets repository. It does not contain training or inference code, model weights, or benchmark datasets.
+The visual materials remain available at their existing paths.
 
 ## Citation
 

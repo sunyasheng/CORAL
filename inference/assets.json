@@ -1,0 +1,17 @@
+{
+  "checkpoints/mix3_19999_inference.pt": {
+    "sha256": "d3c4fa80760ae37f10f864730c4e8a941d03e106a9b3829f2009fe3170c118f2",
+    "bytes": 1474712129,
+    "url": "https://github.com/sunyasheng/CORAL/releases/download/inference-v0.1.0/mix3_19999_inference.pt"
+  },
+  "data/components.cif": {
+    "sha256": "693d424d24e97809e389217766961d3d554eaf339c307df0f89d63a54ebf75fb",
+    "bytes": 486564876,
+    "url": "https://github.com/sunyasheng/CORAL/releases/download/inference-v0.1.0/components.cif"
+  },
+  "data/components.cif.rdkit_mol.pkl": {
+    "sha256": "d2e2382136864c7fcf43a560ec066776eae89cc6cdfe0a1dad95cd933ea1ba00",
+    "bytes": 141274923,
+    "url": "https://github.com/sunyasheng/CORAL/releases/download/inference-v0.1.0/components.cif.rdkit_mol.pkl"
+  }
+}

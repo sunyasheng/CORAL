@@ -1,0 +1,20 @@
+CORAL minimal inference, 2026.
+
+The inference runtime is adapted from Protenix (ByteDance and contributors):
+https://github.com/bytedance/Protenix
+The upstream Apache-2.0 license and source attribution are retained in vendor/.
+Protenix includes Apache-2.0 code adapted from OpenFold, OneFlow and FastFold,
+as described in vendor/LICENSE and the original source headers.
+
+CORAL adaptations include fibril PF/layer relative-position encoding,
+fixed-receptor/constraint inference, portable input and asset handling,
+input-chemistry ligand export, and confidence-rank-consistent structure export.
+The vendored Python files carry a distribution modification notice.
+
+The supplied model is the CORAL mix3 step-19999 checkpoint from the
+Protenix v0.5 model family. It is not the Protenix-v2 model.
+Code and CORAL checkpoint are distributed under Apache-2.0.
+Chemical Component Dictionary data is from wwPDB, with an RDKit cache derived
+from it. See https://www.wwpdb.org/data/ccd and
+https://www.wwpdb.org/about/usage-policies for source attribution and terms.
+Example receptor data is derived from PDB 7WMM; the blind example is 5SD5/HWI.

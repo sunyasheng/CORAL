@@ -1,0 +1,410 @@
+{
+    "4_32_1344_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_1312_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_1280_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_288_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_288_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_352_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_352_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_256_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_256_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_384_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_384_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_320_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_320_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_192_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_192_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_224_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_224_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_160_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_160_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 32,
+            "BLOCK_N": 32
+        },
+        "num_warps": 1,
+        "num_stages": 1
+    },
+    "4_32_64_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 16,
+            "BLOCK_N": 32
+        },
+        "num_warps": 1,
+        "num_stages": 2
+    },
+    "4_32_64_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_96_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 16,
+            "BLOCK_N": 32
+        },
+        "num_warps": 1,
+        "num_stages": 2
+    },
+    "4_32_96_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 32,
+            "BLOCK_N": 32
+        },
+        "num_warps": 1,
+        "num_stages": 1
+    },
+    "4_32_128_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 128,
+            "BLOCK_N": 32
+        },
+        "num_warps": 2,
+        "num_stages": 2
+    },
+    "4_32_128_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_544_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_544_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_576_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_576_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_640_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_640_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_480_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_480_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_416_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_416_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_608_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_608_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_512_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_512_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_448_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_448_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_32_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 16,
+            "BLOCK_N": 32
+        },
+        "num_warps": 1,
+        "num_stages": 2
+    },
+    "4_32_32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 16,
+            "BLOCK_N": 32
+        },
+        "num_warps": 1,
+        "num_stages": 2
+    },
+    "4_32_672_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_672_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_704_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_704_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_768_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_768_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_736_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.bfloat16_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    },
+    "4_32_736_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32_torch.float32": {
+        "kwargs": {
+            "BLOCK_M": 64,
+            "BLOCK_N": 32
+        },
+        "num_warps": 4,
+        "num_stages": 2
+    }
+}
